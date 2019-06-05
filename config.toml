@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Yenting Chen a.k.a JimYTC"
+theme = "ezhil"
