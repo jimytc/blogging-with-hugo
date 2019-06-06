@@ -15,11 +15,11 @@ pygmentscodefencesguesssyntax = true
 # Your Google analytics code.
 googleAnalytics = "UA-9646591-7"
 # Your Disqus sortname.
-# disqusShortname = "localhost"
+disqusShortname = "jimytc-github-io"
 
 [params]
   # Blog subtitle which appears below blog title. Supports markdown.
-  subtitle = "def jimytc; puts 'Dad, Rubyist, Rails dev'; end"
+  subtitle = "human[:jimytc] = 'Dad, Rubyist, Rails dev'"
 
   # Number of posts to show in recent posts list (Optional). Defaults to 10.
   recentPostsCount = 10
