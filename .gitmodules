@@ -5,3 +5,9 @@
 	path = public
 	url = git@github.com:jimytc/jimytc.github.io
 	branch = master
+[submodule "themes/even"]
+	path = themes/even
+	url = https://github.com/olOwOlo/hugo-theme-even
+[submodule "themes/tranquilpeak"]
+	path = themes/tranquilpeak
+	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git

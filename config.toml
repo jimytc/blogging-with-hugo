@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Yenting Chen (a.k.a JimYTC)"
+title = "YenTing Chen"
 theme = "ezhil"
 
 # --------------------------------------------
@@ -19,7 +19,7 @@ disqusShortname = "jimytc-github-io"
 
 [params]
   # Blog subtitle which appears below blog title. Supports markdown.
-  subtitle = "human[:jimytc] = 'Dad, Rubyist, Rails dev'"
+  subtitle = "a.k.a JimYTC"
 
   # Number of posts to show in recent posts list (Optional). Defaults to 10.
   recentPostsCount = 10
