@@ -8,7 +8,7 @@ draft: false
 
 [RailsConf 2019](https://railsconf.com/), as a technical conference, there is a bunch of presentations about the fundamentals, deep inside the Rails framework, leveling up the skills. Rather than deep diving into those talks I attended, I would like to share more about DHH and other speakers’ thoughts about the Rails community, the connections within it and the bonds with the world.
 
-Self-Actualization to Transcendence
+## Self-Actualization to Transcendence
 It’s often to hear a lot of announcements in a tech conference opening keynote, but not in this one. DHH talked a lot about how the software industry has gone so far and how he started implementing and releasing Rails.
 
 He pointed out the open source software ecosystem is in a weird situation that we have to do many marketing works to compete with commercial softwares and then thrive. He does not agree with this point of view that the ecosystem and the community should be this way.
