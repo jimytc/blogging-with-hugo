@@ -1,7 +1,8 @@
 ---
 title: "You but Not Only You"
 date: 2019-05-20T23:54:49+08:00
-draft: false
+tags: [Ruby on Rails, Rails]
+categories: [engineering]
 ---
 
 ![RailsConf 2019](/images/rails-conf-2019-logo.jpg)

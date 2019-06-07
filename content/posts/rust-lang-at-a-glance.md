@@ -1,7 +1,8 @@
 ---
 title: "Rust Lang at a Glance"
 date: 2019-05-28T23:47:44+08:00
-draft: false
+tags: [Rust, Programming Language]
+categories: [engineering]
 ---
 
 Just a quick glance at Rust-lang, haven’t really done things with it. But I’m interested in its memory management system, so called “ownership”, and no “null” design.

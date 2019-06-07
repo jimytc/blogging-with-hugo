@@ -45,14 +45,14 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
-[[menu.main]]
 name = "Tags"
 url = "/tags"
 weight = 4
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 5
 
 # Social media links which shows up on site header.
 # Uses feather icons for icons. You can [search icon names from here](https://feathericons.com/).
@@ -71,6 +71,12 @@ name = "Facebook"
 icon = "facebook"
 url = "https://www.facebook.com/jim.yenting"
 
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/yentingchen/"
+
 # Enable tags.
 [taxonomies]
-   tag = "tags"
+  category = "categories"
+  tag = "tags"
