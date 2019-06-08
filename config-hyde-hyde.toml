@@ -19,14 +19,14 @@ paginate = 5
     author = "YenTing Chen"
     title = "Software Developer"
     description = "a.k.a. JimYTC"
-    authorimage = "/images/author-logo.jpg"
+    authorimage = "/images/author-photo.jpg"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
     copyright = "jimytc"
     license = "CC BY-SA 4.0"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
-    showBuiltWith = true
+    showBuiltWith = false
 
     # https://highlightjs.org
     highlightjs = true

@@ -19,7 +19,7 @@ paginate = 5
     author = "YenTing Chen"
     title = "Software Developer"
     description = "a.k.a. JimYTC"
-    authorimage = "/images/author-logo.jpg"
+    authorimage = "/images/author-photo.jpg"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
