@@ -38,7 +38,7 @@ As you see, [UPSERT](https://wiki.postgresql.org/wiki/UPSERT) in PostgreSQL is a
 
 I’m afraid you cannot use [UPSERT](https://wiki.postgresql.org/wiki/UPSERT) if your PostgreSQL is 9.4 or earlier. Good news is that there are approaches.
 
-## Let’s list the steps.
+### Let’s list the steps.
 
 1. Get those rows needs move.
 2. Update for existing ones.

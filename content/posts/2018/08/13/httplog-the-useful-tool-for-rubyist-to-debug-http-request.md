@@ -1,5 +1,5 @@
 ---
-title: "Httplog the Useful Tool for Rubyist to Debug Http Request"
+title: "Httplog, the Useful Tool for Rubyist to Debug Http Request"
 date: 2018-08-13T15:13:58+08:00
 tags: [ruby,http request,debugging]
 categories: [engineering]
