@@ -44,6 +44,8 @@ paginate = 5
     # ThemeColor from original hyde
     themeColor = "theme-base-08"
 
+    postNavigation = false
+
 ## Social Accounts
 [params.social]
     github = "jimytc"

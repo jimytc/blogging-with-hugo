@@ -26,7 +26,7 @@ paginate = 5
     copyright = "jimytc"
     license = "CC BY-SA 4.0"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
-    showBuiltWith = false
+    showBuiltWith = true
 
     # https://highlightjs.org
     highlightjs = true
@@ -43,6 +43,8 @@ paginate = 5
 
     # ThemeColor from original hyde
     themeColor = "theme-base-08"
+
+    postNavigation = false
 
 ## Social Accounts
 [params.social]
