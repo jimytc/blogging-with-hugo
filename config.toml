@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "https://www.jimytc.com/"
+baseurl = "https://jimytc.com/"
 languageCode = "en"
 
 title = "YenTing Chen"
@@ -16,9 +16,9 @@ paginate = 5
 
 ## Site Settings
 [params]
-    author = "YenTing Chen"
+    author = "Jim Chen"
     title = "Software Developer"
-    description = "a.k.a. JimYTC"
+    description = "a.k.a. jimytc"
     authorimage = "/images/author-photo.jpg"
     dateformat = "Jan 2, 2006"
 
