@@ -2,7 +2,7 @@
 baseurl = "https://jimytc.com/"
 languageCode = "en"
 
-title = "YenTing Chen"
+title = "Jim Chen"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
