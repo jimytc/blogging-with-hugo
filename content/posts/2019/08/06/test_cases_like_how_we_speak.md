@@ -86,8 +86,8 @@ There's a testing framework called [`rspec`](https://rspec.info/) which provides
   ...
 
   test 'period inside budget month' do
-    given_budgets(Budget.new('201904', 30), Budget.new('201905', 310)) do
-      when_period('20190401', '20190401') do
+    given_budgets Budget.new('201904', 30), Budget.new('201905', 310) do
+      when_period from('20190401'), to('20190401') do
         result_should_be 1
       end
     end
@@ -102,10 +102,10 @@ There's a testing framework called [`rspec`](https://rspec.info/) which provides
     end
   end
 
-  def with_period(start_date_str, end_date_str)
+  def with_period(from, to)
     if block_given?
-      actual = query_result(start_date_str, end_date_str)
       assertion_block = yield
+      actual = @budget_service.query(from, to)
       assertion_block.call(actual)
     end
   end
@@ -114,10 +114,16 @@ There's a testing framework called [`rspec`](https://rspec.info/) which provides
     -> (actual) { assert_equal expected, actual }
   end
 
-  def query_result(start_date_str, end_date_str)
-    start_date = Date.strptime(start_date_str, '%Y%m%d')
-    end_date = Date.strptime(end_date_str, '%Y%m%d')
-    @budget_service.query(start_date, end_date)
+  def query_result(from, to)
+    @budget_service.query(from, to)
+  end
+
+  def from(date_str)
+    Date.strptime(date_str, '%Y%m%d')
+  end
+
+  def to(date_str)
+    Date.strptime(date_str, '%Y%m%d')
   end
 
   ...
