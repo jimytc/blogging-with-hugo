@@ -114,10 +114,6 @@ There's a testing framework called [`rspec`](https://rspec.info/) which provides
     -> (actual) { assert_equal expected, actual }
   end
 
-  def query_result(from, to)
-    @budget_service.query(from, to)
-  end
-
   def from(date_str)
     Date.strptime(date_str, '%Y%m%d')
   end
