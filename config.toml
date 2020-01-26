@@ -17,7 +17,7 @@ paginate = 5
 ## Site Settings
 [params]
     author = "Jim Chen"
-    title = "Software Developer"
+    title = "Backend Engineer"
     description = "a.k.a. jimytc"
     authorimage = "/images/author-photo.jpg"
     dateformat = "Jan 2, 2006"
