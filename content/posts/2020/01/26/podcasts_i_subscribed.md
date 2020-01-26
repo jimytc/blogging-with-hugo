@@ -8,9 +8,7 @@ categories: [thoughts]
 My friends and I happened to have a conversation about subscribed podcasts for communication, collaboration and engineering.
 We shared some with each other and I think it's worth writing a post about them.
 
-## TL;DR.
-
-### The list first. (random order, not the rank)
+## List First! (random order, not the rank)
 
 ### [Soft Skills Engineering](https://softskills.audio/)
 
