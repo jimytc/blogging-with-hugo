@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "https://www.jimytc.com/"
+baseurl = "https://jimytc.com/"
 languageCode = "en"
 
 title = "Jim Chen"

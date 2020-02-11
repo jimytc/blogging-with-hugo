@@ -12,7 +12,7 @@ We shared some with each other and I think it's worth writing a post about them.
 
 ### [Soft Skills Engineering](https://softskills.audio/)
 
-I knew and subscribed to this podcast at the very beginning of its launch. At then I was just assigned as a team lead and it required so many skills other than coding, which we called them "Soft Skills". This podcast is all about those items. Dave and Jamison are really thoughtful and homorous. The topics cover from management, communication, startup opportunities, etc. Yes, so many.
+I knew and subscribed to this podcast at the very beginning of its launch. At then I was just assigned as a team lead and it required so many skills other than coding, which we called them "Soft Skills". This podcast is all about those items. Dave and Jamison are really thoughtful and humorous. The topics cover from management, communication, startup opportunities, etc. Yes, so many.
 
 Although I didn't listen to it often, I kept finding topics I like and had a time for them. And I always got some inspiration.
 
