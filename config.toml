@@ -42,7 +42,7 @@ paginate = 5
     #toc = none, "hugo", or "tocbot"
 
     # ThemeColor from original hyde
-    themeColor = "theme-base-08"
+    themeColor = "theme-base-0a"
 
     postNavigation = false
 
