@@ -27,3 +27,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: jimytc/jimytc.github.io
           publish_dir: ./public
+          publish_branch: master
