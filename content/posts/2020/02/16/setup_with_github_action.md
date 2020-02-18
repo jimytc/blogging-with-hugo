@@ -116,7 +116,7 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: jimytc/jimytc.github.io # <- 改成你自己的 user github page
           publish_dir: ./public # <- 指定編譯後的成品放置的資料夾
-          publish_branch: master # <- 遠端 repo 的目標分之
+          publish_branch: master # <- 遠端 repo 的目標分支
 ```
 
 ## 感想
