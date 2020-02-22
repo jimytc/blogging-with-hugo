@@ -51,9 +51,9 @@ Pretty interesting, huh?
 
 ## Lessons to share
 
-I belive that the entire effort would never be reduced, it's just moved to somewhere else. Like my story, Ruby allows us to ignore parenthisis but that also makes statement evaluation implicit. To make it work as what we want, we have to be aware of it.
+I believe that the entire effort would never be reduced, it's just moved to somewhere else. Like my story, Ruby allows us to ignore parenthesis but that also makes statement evaluation implicit. To make it work as what we want, we have to be aware of it.
 
-Maybe there are some better pattern to live with no-parenthises style. If you know, please let me know. I really want to learn that. But before that, I would suggest using parenthesis to reduce the chance that the code runs differently from we think.
+Maybe there are some better pattern to live with no-parenthesis style. If you know, please let me know. I really want to learn that. But before that, I would suggest using parenthesis to reduce the chance that the code runs differently from we think.
 
 But don't get me wrong. I love coding in Ruby. :D
 
