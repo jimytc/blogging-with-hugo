@@ -13,9 +13,9 @@ It was the inability to do development and run test all in my most familiar IDE.
 
 ## Observations and the fix
 
-I got two from the investigation. The first one obvious => the error. It was an unexpected outgoing network request sent when running test with my IDE. (We don't want test has dependencies on network.) The other was the difference commands for running tests. In terminal, I used `bundle exec rails test <test_file>` and my IDE uses `ruby -Itest <test_file>`.
+I got two from my investigation. The first one was obvious => the error. It was an unexpected outgoing network request when running test with my IDE. (We don't want test has dependencies on network.) The other was the different commands for tests. In terminal, I used `bundle exec rails test <test_file>` and my IDE uses `ruby -Itest <test_file>`.
 
-So simple thing first, could I reproduce it with the same command from my IDE? And the answer was yes. Great, I got consistency in both environments which may lead to the differences in the flow of the commands. But let me go into the error one which might be a more possible human error.
+So simple thing first, could I reproduce it with the same command from my IDE? And the answer was yes. Great, I got consistency in both environments. Different commands may lead to the differences in the flow of the commands. But let me go into the error one which is more likely a human error.
 
 Guess what. It's caused by a network library initialization wrapped by a guard condition. Like below.
 
@@ -39,23 +39,33 @@ end
 
 This is something about Ruby's operator precedence. You can refer the post [here](https://ruby-doc.org/core-2.7.0/doc/syntax/precedence_rdoc.html).
 
-The original guard condition, `defined? NET_TOOL && !Rails.env.test?`.
-`&&` operator has higher order than `defined?` so the expression becomes `defined?(NET_TOOL && !Rails.env.test?)`.
+The original guard condition is,
+```ruby
+defined? NET_TOOL && !Rails.env.test?`
+```
 
-Further, namespace, `NET_TOOL`, exists and `!Rails.env.test?` is `false` in testing, the code will be recognized as `defined?(false)` and it will return a `"expression"` string.
+With which we want it to be.
 
-In Ruby, the if-statement cares about falsy and truthy, not the boolean value, `true` and `false`.
-Truthy means values that are not `nil` or `false`. Therefore, our original if-statement always checks on truthy value so it always invokes the initialization.
+```ruby
+defined?(NET_TOOL) && !Rails.env.test?`
+```
+
+
+However, the `&&` operator has higher order than `defined?`, so the expression actually becomes `defined?(NET_TOOL && !Rails.env.test?)`.
+
+Further, `NET_TOOL` namespace exists and `!Rails.env.test?` is `false` in testing. The code will be recognized as `defined?(false)` and it returns a `"expression"` string.
+
+In Ruby, if-statement cares about falsy and truthy, not the boolean value, `true` and `false`.
+Truthy means values that are not `nil` or `false`. Therefore, our original if-statement always gets a truthy value. And as a result, it always does the initialization.
 
 Pretty interesting, huh?
 
-## Lessons to share
+## Thoughts
 
-I believe that the entire effort would never be reduced, it's just moved to somewhere else. Like my story, Ruby allows us to ignore parenthesis but that also makes statement evaluation implicit. To make it work as what we want, we have to be aware of it.
+I believe that the entire effort would never be reduced. It's just moved to somewhere else. Like my story, Ruby allows us to ignore parenthesis but that also makes expression evaluation implicit. To make the program runs as we think, we have to be aware of those implicit rules.
 
 Maybe there are some better pattern to live with no-parenthesis style. If you know, please let me know. I really want to learn that. But before that, I would suggest using parenthesis to reduce the chance that the code runs differently from we think.
 
-But don't get me wrong. I love coding in Ruby. :D
 
 ### Another mysterious thing to dive into but not this time.
 
