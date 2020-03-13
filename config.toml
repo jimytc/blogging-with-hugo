@@ -19,7 +19,7 @@ paginate = 5
     author = "Jim Chen"
     title = "Backend Engineer"
     description = "a.k.a. jimytc"
-    authorimage = "/images/author-photo.jpg"
+    authorimage = "/images/author-photo.png"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
