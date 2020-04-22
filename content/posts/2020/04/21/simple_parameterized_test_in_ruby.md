@@ -52,21 +52,25 @@ end
 class OpGreaterTest < Minitest::Test
   def test_op_greater
     [
-      { a: 100, b: 1, expectation: true },
-      { a: 1, b: 20, expectation: false }
+      { op1: 100, op2: 1, expectation: true },
+      { op1: 1, op2: 20, expectation: false }
     ].each do |args|
-      op = OpGreater.new(args[:a], v[:b])
+      op = OpGreater.new(args[:op1], args[:op2])
       assert_equal args[:expectation], op.call
     end
   end
 end
 ```
 
-後者看起來好像乾淨很多，好像也很參數化了，但是就撰寫測試來說是滿有疑慮的。主要的考量會是 1. 測試案例本身沒辦法告訴維護或使用 `OpGreataer` 的開發人員該如何使用它、2. 測試案例的名稱本身沒辦法表達測試的情境以及 3. 如果使用 `OpGreater` 改變了行為（無論有意或無意），維護的人員沒辦法迅速知道是改壞了還是測試案例該修改。
+後者看起來好像乾淨很多，好像也很參數化了，但是就撰寫測試來說是滿有疑慮的。主要的考量會是
 
-因此如果沒有使用參數化測試，比較建議囉唆一點，每一種情境寫一種專門的測試。可是，重複的事情我就不想做那麼多次啊！重複的 code 連複製貼上都懶。
+1. 測試案例本身沒辦法告訴維護或使用 `OpGreater` 的開發人員該如何使用它
+2. 測試案例的名稱本身沒辦法表達測試的情境以及
+3. 如果使用 `OpGreater` 改變了行為（無論有意或無意），維護的人員沒辦法迅速知道是改壞了還是測試案例該修改。
 
-## 用一點點 Ruby 的特性就可以了
+因此比較建議囉唆一點，每一種情境寫一種專門的測試。可是，重複的事情我就不想做那麼多次啊！重複的 code 連複製貼上都懶。
+
+## 用上 Ruby 的特性就可以解決問題了
 
 之前一直覺得要導入類似的框架或函式庫才做得到參數化測試，但是後來發現根本是自己給自己挖坑，Ruby 本身就可以做到很好的動態擴充，透過 meta programming 的技巧。
 
@@ -93,7 +97,7 @@ class OpGreaterTest < Minitest::Test
 end
 ```
 
-這樣看起來很難讀，那就在包裝一下吧，順便讓這個功能變成通用一點。
+這樣看起來很難讀嗎？那就再包裝一下吧，順便讓這個功能變成更通用一點。
 
 ```ruby
 module ParameterizedTestHelper
