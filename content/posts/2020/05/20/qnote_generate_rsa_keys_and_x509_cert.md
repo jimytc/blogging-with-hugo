@@ -7,7 +7,7 @@ categories: [engineering]
 
 I've spent some time investigating how to create RSA key pairs for a feature.
 
-Put a note here just in case I need it a gain.
+Put a note here just in case I need it again.
 
 ### Generate RSA private key with 2048 bits
 
