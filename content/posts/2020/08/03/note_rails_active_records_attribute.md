@@ -3,7 +3,6 @@ title: "Have Custom Attribute for a Rails ActiveRecord Model"
 date: 2020-08-03T17:00:19+08:00
 tags: [ruby,ruby on rails]
 categories: [engineering]
-draft: true
 ---
 
 Framework is pretty opinionated in its area, but that also means it handles many repetitive and tedious tasks. When using ORM like ActiveRecord, it saved us so much time defining which model has what attributes. The convention from ActiveRecord design is that all the columns of a table, which is a model in the app, are attributes of the model.
