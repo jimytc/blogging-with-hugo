@@ -12,6 +12,10 @@ categories: [engineering,programming language]
 
 class Foo {
   bar?: number
+  
+  constructor(bar?: number) {
+    this.bar = bar;
+  }
 }
 
 let foos: Foo[];
