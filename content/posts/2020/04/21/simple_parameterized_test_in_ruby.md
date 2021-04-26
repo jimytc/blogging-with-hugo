@@ -88,7 +88,7 @@ class OpGreaterTest < Minitest::Test
     { a: 100, b: 1, expectation: true },
     { a: 1, b: 20, expectation: false }
   ].each do |args|
-    scenario = "test_given_arg1_as_#{args[:a]}_and_arg2_as_#{args[:b]}_returns_#{args[:expectation]}"
+    scenario = "given_arg1_as_#{args[:a]}_and_arg2_as_#{args[:b]}_returns_#{args[:expectation]}"
     define_method("test_#{scenario}") do
       op = OpGreater.new(args[:a], args[:b])
       assert_equal args[:expectation], op.call
