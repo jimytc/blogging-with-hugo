@@ -7,7 +7,7 @@ theme = "hyde-hyde"
 
 ## Hugo Built-in Features
 disqusShortname = "jimytc-github-io"
-googleAnalytics = "UA-9646591-7"
+googleAnalytics = "G-NRN7ZQM9J2"
 enableRobotsTXT = true
 
 summarylength = 30
